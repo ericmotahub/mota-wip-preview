@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ViewType } from '../types';
 
@@ -81,6 +80,12 @@ const Navbar: React.FC<NavbarProps> = ({ onLogoClick, onNavigate, subtitle }) =>
             Home
           </button>
           <button 
+            onClick={() => handleNavigate(ViewType.ABOUT)}
+            className="text-[10px] uppercase tracking-[2px] font-semibold text-text-body hover:text-brand-pink transition-colors"
+          >
+            About
+          </button>
+          <button 
             onClick={() => handleNavigate(ViewType.FILMMAKERS)}
             className="text-[10px] uppercase tracking-[2px] font-semibold text-text-body hover:text-brand-pink transition-colors"
           >
@@ -90,7 +95,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLogoClick, onNavigate, subtitle }) =>
             onClick={() => handleNavigate(ViewType.PARTNERS)}
             className="text-[10px] uppercase tracking-[2px] font-semibold text-text-body hover:text-brand-pink transition-colors"
           >
-            Partners
+            Creative Partners
           </button>
           <button 
             onClick={() => handleNavigate(ViewType.CREW)}
@@ -131,6 +136,12 @@ const Navbar: React.FC<NavbarProps> = ({ onLogoClick, onNavigate, subtitle }) =>
             className="text-left text-sm uppercase tracking-[3px] font-bold text-gray-400 hover:text-brand-pink"
           >
             Home
+          </button>
+          <button 
+            onClick={() => handleNavigate(ViewType.ABOUT)}
+            className="text-left text-sm uppercase tracking-[3px] font-bold text-gray-400 hover:text-brand-pink"
+          >
+            About
           </button>
           <div className="h-px bg-white/5 w-full"></div>
           <div className="space-y-4">

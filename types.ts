@@ -1,4 +1,3 @@
-
 export enum PortalType {
   FILMMAKERS = 'filmmakers',
   PARTNERS = 'partners',
@@ -10,6 +9,7 @@ export enum ViewType {
   FILMMAKERS = 'filmmakers',
   PARTNERS = 'partners',
   CREW = 'crew',
+  ABOUT = 'about',
   CONTACT = 'contact',
   LOGIN = 'login'
 }
